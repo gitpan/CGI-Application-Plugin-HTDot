@@ -1,0 +1,10 @@
+--- #YAML:1.0
+name: CGI-Application-Plugin-HTDot
+version: 0.02
+author:
+  - Jason A. Crome <cromedome@cpan.org>
+abstract: Enable "magic dot" notation in 
+L<CGI::Application>-derived applications that use L<HTML::Template> for their
+templating mechanism.
+license: perl
+generated_by: Module::Build version 0.2611, without YAML.pm

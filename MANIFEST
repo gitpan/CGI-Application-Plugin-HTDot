@@ -1,0 +1,15 @@
+Build.PL
+Changes
+MANIFEST
+META.yml # Will be created by "make dist"
+README
+lib/CGI/Application/Plugin/HTDot.pm
+t/00-load.t
+t/01-load_tmpl.t
+t/02-extend_load_tmpl.t
+t/pod-coverage.t
+t/pod.t
+test/TestApp.pm
+test/TestApp2.pm
+test/templates/test.tmpl
+Makefile.PL
