@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name: CGI-Application-Plugin-HTDot
-version: 0.02
+version: 0.03
 author:
   - Jason A. Crome <cromedome@cpan.org>
 abstract: Enable "magic dot" notation in 

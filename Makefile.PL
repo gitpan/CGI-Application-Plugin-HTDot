@@ -7,7 +7,11 @@ WriteMakefile
           'NAME' => 'CGI::Application::Plugin::HTDot',
           'VERSION_FROM' => 'lib/CGI/Application/Plugin/HTDot.pm',
           'PREREQ_PM' => {
-                           'Test::More' => 0
+                           'Test::More' => 0,
+                           'CGI::Application' => '>= 4.00',
+                           'Test::Exception' => 0,
+                           'Module::Build' => 0,
+                           'HTML::Template::Plugin::Dot' => 0
                          }
         )
 ;

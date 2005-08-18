@@ -4,7 +4,7 @@ NAME
     templating mechanism.
 
 VERSION
-    Version 0.02
+    Version 0.03
 
 SYNOPSIS
         # In your CGI::Application-derived base class. . . 
@@ -99,8 +99,10 @@ ACKNOWLEDGEMENTS
     Credit needs to be given to Jesse Erlbaum and Mark Stosberg for the
     original "load_tmpl()" method that this is based on. Special thanks also
     to Rhesa Rozendaal and Mark Stosberg for their work on enabling the
-    magic dot in HTML::Template, and to the usual crowd in #cgiapp on
-    irc.perl.org for making this all worthwhile for me :)
+    magic dot in HTML::Template, Cees Hek for his idea (and tutorial on how)
+    to use multiple inheritance to make this plugin work, and to the usual
+    crowd in #cgiapp on irc.perl.org for making this all worthwhile for me
+    :)
 
 SEE ALSO
     CGI::Application, HTML::Template, HTML::Template::Pluggable,

@@ -10,11 +10,11 @@ templating mechanism.
 
 =head1 VERSION
 
-Version 0.02
+Version 0.03
 
 =cut
 
-$CGI::Application::Plugin::HTDot::VERSION = '0.02';
+$CGI::Application::Plugin::HTDot::VERSION = '0.03';
 
 =head1 SYNOPSIS
 
@@ -153,8 +153,9 @@ your bug as I make changes.
 Credit needs to be given to Jesse Erlbaum and Mark Stosberg for the original
 C<load_tmpl()> method that this is based on.  Special thanks also to
 Rhesa Rozendaal and Mark Stosberg for their work on enabling the magic dot
-in L<HTML::Template>, and to the usual crowd in #cgiapp on irc.perl.org for
-making this all worthwhile for me :)
+in L<HTML::Template>, Cees Hek for his idea (and tutorial on how) to use multiple
+inheritance to make this plugin work, and to the usual crowd in #cgiapp on 
+irc.perl.org for making this all worthwhile for me :)
 
 =head1 SEE ALSO
 

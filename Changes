@@ -1,5 +1,11 @@
 Revision history for CGI-Application-Plugin-HTDot
 
-0.01    Date/time
-        First version, released on an unsuspecting world.
+0.03    2005/08/18
+        Added module dependencies to Build.PL.  Updated acknowledgements.
+
+0.02    2005/08/16
+        First public version, released on an unsuspecting world.  Mwahaha! ;)
+
+0.01    Never released :(
+        For my own testing purposes.
 
