@@ -1,5 +1,11 @@
 Revision history for CGI-Application-Plugin-HTDot
 
+0.04    2007/03/16
+        Ported recent modifications to CGI::Application's load_tmpl() method.
+        Fixed module metadata.
+        Improved test suite.
+        Automatically pass CGI::Application object to templates as c.
+
 0.03    2005/08/18
         Added module dependencies to Build.PL.  Updated acknowledgements.
 
@@ -8,4 +14,3 @@ Revision history for CGI-Application-Plugin-HTDot
 
 0.01    Never released :(
         For my own testing purposes.
-

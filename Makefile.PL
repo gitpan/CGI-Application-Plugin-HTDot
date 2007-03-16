@@ -5,10 +5,11 @@ WriteMakefile
           'PL_FILES' => {},
           'INSTALLDIRS' => 'site',
           'NAME' => 'CGI::Application::Plugin::HTDot',
+          'EXE_FILES' => [],
           'VERSION_FROM' => 'lib/CGI/Application/Plugin/HTDot.pm',
           'PREREQ_PM' => {
                            'Test::More' => 0,
-                           'CGI::Application' => '>= 4.00',
+                           'CGI::Application' => '4.0',
                            'Test::Exception' => 0,
                            'Module::Build' => 0,
                            'HTML::Template::Plugin::Dot' => 0

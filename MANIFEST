@@ -8,8 +8,11 @@ README
 t/00-load.t
 t/01-load_tmpl.t
 t/02-extend_load_tmpl.t
+t/03-c_in_tmpl.t
 t/pod-coverage.t
 t/pod.t
-test/templates/test.tmpl
-test/TestApp.pm
-test/TestApp2.pm
+t/TestApp.pm
+t/TestApp2.pm
+t/TestApp3.pm
+t/templates/test.tmpl
+t/templates/test2.tmpl
