@@ -1,5 +1,8 @@
 Revision history for CGI-Application-Plugin-HTDot
 
+0.05    2007/03/16
+        Fixed bug that could trigger a die() if die_on_bad_params is set to 1.
+
 0.04    2007/03/16
         Ported recent modifications to CGI::Application's load_tmpl() method.
         Fixed module metadata.

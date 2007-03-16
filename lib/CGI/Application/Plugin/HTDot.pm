@@ -10,11 +10,11 @@ templating mechanism.
 
 =head1 VERSION
 
-Version 0.04
+Version 0.05
 
 =cut
 
-$CGI::Application::Plugin::HTDot::VERSION = '0.04';
+$CGI::Application::Plugin::HTDot::VERSION = '0.05';
 
 =head1 SYNOPSIS
 
@@ -138,7 +138,7 @@ sub load_tmpl {
     # somewhere in the template...)
     my @vars = $t->query;
     foreach my $var ( @vars ) {
-        $t->param( c => $self ) if $var =~ /^c{1}/;
+        $t->param( c => $self ) if $var =~ /^c\./;
     }
 
 	# Give the user back their template
