@@ -10,11 +10,11 @@ templating mechanism.
 
 =head1 VERSION
 
-Version 0.05
+Version 0.06
 
 =cut
 
-$CGI::Application::Plugin::HTDot::VERSION = '0.05';
+$CGI::Application::Plugin::HTDot::VERSION = '0.06';
 
 =head1 SYNOPSIS
 
@@ -166,8 +166,6 @@ The following code snippet illustrates one possible way of achieving this:
 
 This plugin honors the C<load_tmpl()> callback.  Any C<load_tmpl()>-based
 callbacks you have created will be executed as intended:
-
-....ABOVE EXAMPLE AS CALLBACK.  TEST!!!
 
 =head1 DEFAULT PARAMETERS
 

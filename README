@@ -4,7 +4,7 @@ NAME
     templating mechanism.
 
 VERSION
-    Version 0.05
+    Version 0.06
 
 SYNOPSIS
         # In your CGI::Application-derived base class. . .
@@ -86,8 +86,6 @@ METHODS
 
     This plugin honors the `load_tmpl()' callback. Any `load_tmpl()'-based
     callbacks you have created will be executed as intended:
-
-    ....ABOVE EXAMPLE AS CALLBACK. TEST!!!
 
 DEFAULT PARAMETERS
     By default, this plugin will automatically add a parameter 'c' to your
