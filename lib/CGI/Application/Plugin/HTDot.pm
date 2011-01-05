@@ -10,11 +10,11 @@ templating mechanism.
 
 =head1 VERSION
 
-Version 0.06
+Version 0.07
 
 =cut
 
-$CGI::Application::Plugin::HTDot::VERSION = '0.06';
+$CGI::Application::Plugin::HTDot::VERSION = '0.07';
 
 =head1 SYNOPSIS
 
@@ -63,6 +63,9 @@ When you have lots of apps and lots of templates, and no means to switch to
 Template Toolkit, this will make your life infinitely easier.
 
 For more information about the magic dot, see L<HTML::Template::Plugin::Dot>.
+
+As of version 4.31 of L< CGI::Application >, you can use the 
+C< html_tmpl_class() > method as an alternative to this plugin.  TIMTOWTDI.
 
 =head1 METHODS
 

@@ -4,7 +4,7 @@ NAME
     templating mechanism.
 
 VERSION
-    Version 0.06
+    Version 0.07
 
 SYNOPSIS
         # In your CGI::Application-derived base class. . .
@@ -34,15 +34,15 @@ DESCRIPTION
     your template (ala Template Toolkit), but your development schedule
     doesn't give you the time to learn (much less migrate to!) Template
     Toolkit or AnyTemplate. Well, you need fret no more!
-    `CGI::Application::Plugin::HTDot' helps you bring the power of the magic
+    "CGI::Application::Plugin::HTDot" helps you bring the power of the magic
     dot to your HTML::Template-based templates from within your
     CGI::Application-derived webapps.
 
     CGI::Application::Plugin::HTDot provides the glue between
     CGI::Application, HTML::Template::Pluggable and
-    HTML::Template::Plugin::Dot. It overrides the `load_tmpl()' method
+    HTML::Template::Plugin::Dot. It overrides the "load_tmpl()" method
     provided with CGI::Application and replaces it with one that turns on
-    the magic dot in HTML::Template. The `load_tmpl()' method provided here
+    the magic dot in HTML::Template. The "load_tmpl()" method provided here
     is 100% compatible with the one found in a stock CGI::Application app,
     so using this plugin does not require refactoring of any code. You can
     use the magic dot in your application and templates going forward, and
@@ -54,22 +54,23 @@ DESCRIPTION
     For more information about the magic dot, see
     HTML::Template::Plugin::Dot.
 
+    As of version 4.31 of " CGI::Application ", you can use the "
+    html_tmpl_class() " method as an alternative to this plugin. TIMTOWTDI.
+
 METHODS
   load_tmpl()
-
-    For the most part, this is the exact `load_tmpl()' method from
+    For the most part, this is the exact "load_tmpl()" method from
     CGI::Application, except it uses HTML::Template::Pluggable and
     HTML::Template::Plugin::Dot instead of HTML::Template.
 
     See the CGI::Application reference for more detailed information on what
-    parameters can be passed to `load_tmpl()'.
+    parameters can be passed to "load_tmpl()".
 
   Extending load_tmpl()
-
-    There are times when the basic `load_tmpl()' functionality just isn't
-    enough. Many HTML::Template developers set `die_on_bad_params' to `0' on
+    There are times when the basic "load_tmpl()" functionality just isn't
+    enough. Many HTML::Template developers set "die_on_bad_params" to 0 on
     all of their templates. The easiest way to do this is by replacing or
-    extending the functionality of CGI::Application's `load_tmpl()' method.
+    extending the functionality of CGI::Application's "load_tmpl()" method.
     This is still possible using the plugin.
 
     The following code snippet illustrates one possible way of achieving
@@ -84,7 +85,7 @@ METHODS
           return $self->SUPER::load_tmpl($tmpl_file, @extra_params);
       }
 
-    This plugin honors the `load_tmpl()' callback. Any `load_tmpl()'-based
+    This plugin honors the "load_tmpl()" callback. Any "load_tmpl()"-based
     callbacks you have created will be executed as intended:
 
 DEFAULT PARAMETERS
@@ -115,26 +116,26 @@ DEFAULT PARAMETERS
     in your code, not in your template. Try to limit yourself to pulling in
     information into your templates (like the session example above does).
 
-    This plugin will respect your current `die_on_bad_params' setting. If
-    `die_on_bad_params' is set to `1' and your template does not use 'c',
-    the plugin will not attempt to pass the CGI::Application object to your
+    This plugin will respect your current "die_on_bad_params" setting. If
+    "die_on_bad_params" is set to 1 and your template does not use 'c', the
+    plugin will not attempt to pass the CGI::Application object to your
     template. In other words, it does not force your application to set
-    `die_on_bad_params' to `0' to accomplish this action.
+    "die_on_bad_params" to 0 to accomplish this action.
 
 AUTHOR
-    Jason A. Crome, `<cromedome@cpan.org>'
+    Jason A. Crome, "<cromedome@cpan.org>"
 
 BUGS
     Please report any bugs or feature requests to
-    `bug-cgi-application-plugin-htdot@rt.cpan.org', or through the web
+    "bug-cgi-application-plugin-htdot@rt.cpan.org", or through the web
     interface at
-    http://rt.cpan.org/NoAuth/ReportBug.html?Queue=CGI-Application-Plugin-HT
-    Dot. I will be notified, and then you'll automatically be notified of
+    <http://rt.cpan.org/NoAuth/ReportBug.html?Queue=CGI-Application-Plugin-H
+    TDot>. I will be notified, and then you'll automatically be notified of
     progress on your bug as I make changes.
 
 ACKNOWLEDGMENTS
     Thanks and credit needs to be given to Jesse Erlbaum and Mark Stosberg
-    for the original `load_tmpl()' method that this is based on, to Rhesa
+    for the original "load_tmpl()" method that this is based on, to Rhesa
     Rozendaal and Mark Stosberg for their work on enabling the magic dot in
     HTML::Template, Cees Hek for his idea (and tutorial on how) to use
     multiple inheritance to make this plugin work, and to the usual crowd in

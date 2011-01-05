@@ -1,5 +1,9 @@
 Revision history for CGI-Application-Plugin-HTDot
 
+0.07    2011/01/04
+        POD updates.  Named CGI::Application's load_tmpl_class() as an 
+        alternative to this plugin.
+
 0.06    2007/03/19
         Removed my notes to self.
 

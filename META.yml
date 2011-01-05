@@ -1,23 +1,25 @@
 ---
-name: CGI-Application-Plugin-HTDot
-version: 0.06
+abstract: "Enable \"magic dot\" notation in CGI::Application-derived applications that use HTML::Template for their templating mechanism."
 author:
   - 'Jason A. Crome <cromedome@cpan.org>'
-abstract: Enable "magic dot" notation in CGI::Application-derived applications that use HTML::Template for their templating mechanism.
+configure_requires:
+  Module::Build: 0.36
+generated_by: 'Module::Build version 0.3603'
 license: perl
-resources:
-  license: http://dev.perl.org/licenses/
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: CGI-Application-Plugin-HTDot
+provides:
+  CGI::Application::Plugin::HTDot:
+    file: lib/CGI/Application/Plugin/HTDot.pm
+    version: 0.07
 requires:
   CGI::Application: 4.0
   HTML::Template::Plugin::Dot: 0
   Module::Build: 0
   Test::Exception: 0
   Test::More: 0
-provides:
-  CGI::Application::Plugin::HTDot:
-    file: lib/CGI/Application/Plugin/HTDot.pm
-    version: 0.06
-generated_by: Module::Build version 0.2806
-meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.2.html
-  version: 1.2
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.07
